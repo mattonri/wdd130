@@ -1,0 +1,27 @@
+body {
+    background-color:lightpink;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+blockquote {
+    color: white;
+    /*font-style:oblique;
+    ^looks good but isn't a part of the assignment*/
+}
+ol {
+    text-align: left;
+    display: inline-block;
+    font-weight: bold;
+}
+img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.large {
+    font-size: 1.5em;
+}
+h4 {
+    color: white;
+}
