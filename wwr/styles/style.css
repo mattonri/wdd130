@@ -20,10 +20,10 @@
 }
 #background {
     height: 725px;
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
 }
 body {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 header {
     background-color: var(--accent2-color);
