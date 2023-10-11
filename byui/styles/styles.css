@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+body {
+  margin: 0;
+  padding: 0;
+}
 .main-para {
   font-size: 1.5em;
   line-height: 1.5em;
@@ -10,19 +14,19 @@
   color: steelblue;
 }
 
-nav, footer {
+nav{
   text-align: center;
 
 }
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 25px;
 }
   /*em is relative to font of parent element but rem is to root font size, default 16*/
 nav a {
   font-size: 1.5em;
   color: white;
-  margin: 40px;
+  padding: 26px;
 }
 nav a:hover {
   background-color: white;
@@ -40,6 +44,7 @@ h1 {
   color: steelblue;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  margin: 50px 0;
 }
 img {
   width: 80%;
@@ -50,21 +55,17 @@ img {
 p {
   padding: 10px;
   width: 80%;
-  /*margin: 0 auto;*/
+  margin: 50px auto;
 }
 footer {
-
+  background-color: steelblue;
   color: white;
   text-align: center;
-  margin-right: 0 auto;
-  margin-left: 0 auto;
+  margin: 50px auto 0 auto;
 }
 
 footer p{
-  background-color: steelblue;
-  display: inline-block;
-  font-size: 20px;
-  margin: 20px auto;
+  padding:25px;
 }
 /*border around all elements*/
 /*

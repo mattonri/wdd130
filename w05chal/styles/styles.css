@@ -1,0 +1,29 @@
+body {
+    margin:0;
+}
+#hero_image {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    /*Note: ^This eliminates an inexplicable 2.5px gap between this and the div. No clue why though.*/
+}
+#hero {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.circle_image {
+    width: 20%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #333333;
+    border-width: 15px;
+    margin: 25px;
+}
+.circle_box {
+    background-color: grey;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
