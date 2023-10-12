@@ -1,99 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #CAD2C5   ;
-    --secondary-color: #84A98C ;
+    --primary-color: #CAD2C5;
+    --secondary-color: #84A98C;
     --accent1-color: #52796F;
     --accent2-color: #354F52;
     --accent3-color: #2F3E46;
     --light-text: #CAD2C5;
-    --dark-text:#2F3E46;
-  
-    /* change the values below to your chosen font(s) */
+    --dark-text: #2F3E46;
+
+    /* change the values below to your chosen font(s)
     --heading-font: 'Poppins', sans-serif;
-    --paragraph-font: 'Open Sans', Helvetica, sans-serif;
+    --paragraph-font: 'Open Sans', Helvetica, sans-serif;*/
 }
 
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
+
 #background {
     height: 725px;
     background-color: var(--accent1-color);
 }
+
 body {
     background-color: var(--primary-color);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
+
 header {
     background-color: var(--accent2-color);
 }
+
+main section img {
+    box-sizing: border-box;
+}
+
 .logo {
     width: 80px;
 }
+
+#logo_link {
+    padding-top: 5px;
+}
+
 nav a {
     text-align: center;
     color: var(--light-text);
     text-decoration: none;
+    padding: 35px;
 }
+
 nav a:hover {
     background-color: var(--accent3-color);
 }
+
 .home-title {
     color: var(--dark-text);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
+
 h4 {
     color: var(--dark-text);
 }
+
+h2 {
+    margin: 0;
+}
+
 #hero-img {
     width: 100%;
 }
-#hero-msg h1, #hero-msg h4{
+
+#hero-msg h1,
+#hero-msg h4 {
     text-align: center;
 }
+
 .button-box {
     text-align: center;
 }
+
 main section {
     text-align: center;
 }
-.book, .join {
+
+.book,
+.join {
     background-color: var(--accent2-color);
     color: var(--light-text);
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
-.book:hover, .join:hover {
+
+.book:hover,
+.join:hover {
     background-color: var(--accent3-color);
     /*color: #*/
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid var(--accent1-color);
 }
 
 .msg {
     background-color: var(--accent2-color);
+    line-height: 1.5em;
+    padding: 35px
 }
+
 .msg h2 {
     color: var(--light-text);
 }
+
 .msg p {
     color: var(--light-text);
+    font-size: .8em;
+    padding-bottom: 15px;
 }
+
 footer {
     background-color: var(--accent3-color);
     color: var(--light-text);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
+
 footer p {
     font-size: 1.2em;
 }
+
 footer a {
     color: var(--light-text);
     text-decoration: none;
 }
+
 footer a:hover {
     color: var(--light-text);
 }
+
 footer p a:hover {
     text-decoration: underline;
-}    
+}
+
+footer .social img {
+    padding-top: 15px;
+}
