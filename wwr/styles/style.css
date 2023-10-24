@@ -265,7 +265,9 @@ footer .social img {
     }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
+    }
+    #hero-msg h1 {
+        color: var(--dark-text)
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
