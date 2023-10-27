@@ -127,9 +127,11 @@ main section {
     text-align: center;
 }
 
+
+
 .book,
 .join {
-    background-color: var(--accent2-color);
+    background-color: var(--accent3-color);
     color: var(--light-text);
     text-decoration: none;
     font-size: 18px;
@@ -138,9 +140,10 @@ main section {
     border-radius: 5px;
 }
 
+
 .book:hover,
 .join:hover {
-    background-color: var(--accent3-color);
+    background-color: var(--accent1-color);
     /*color: #*/
 }
 
