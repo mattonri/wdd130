@@ -4,7 +4,7 @@
   /* This is the parent of the activity 1 boxes. */
  display: grid;
  grid-template-columns: 1fr 1fr;
- grid-template-rows: 1fr 1fr 1fr 1fr;
+ grid-gap: 15px;
 }
 .red1 { 
   /*width: 100px;*/ 
@@ -17,15 +17,15 @@
  / grid-row-end / grid-column-end | itemname;*/
 .green1 {
   margin: 0 auto;
-  width: 100px; 
-  height: 100px; 
+  width: 200px; 
+  height: 200px; 
   background-color: green; 
 
 } 
 .yellow1 {
   margin: 0 auto;
-  width: 100px; 
-  height: 100px; 
+  width: 200px; 
+  height: 200px; 
   background-color: gold; 
 } 
 .blue1 {
@@ -172,7 +172,7 @@
 .content6 {
   /* This is the parent of the activity 6 boxes. */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 100px);
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .red6 {
