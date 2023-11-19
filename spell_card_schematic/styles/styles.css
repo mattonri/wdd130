@@ -3,8 +3,11 @@
     --white: #E8EEF2;
     --brown: #B39C4D;
     --green-light: #768948;
-    --green-dark: #52683C;
-    --green-pastel: #9DA980;
+    /* --green-dark: #52683C; */
+    --green-dark: #304020;
+
+    /* --green-pastel: #9DA980; */
+    --green-pastel: #A0C280;
     --heading-font: 'Poppins', sans-serif;
     --paragraph-font: 'Open Sans', Helvetica, sans-serif;
 }
@@ -21,8 +24,8 @@
 }
 .bar {
     display: block;
-    width: 30px;
-    height: 3px;
+    width: 40px;
+    height: 4px;
     background-color: var(--green-dark);
     margin: 5px auto;
     transition: 0.4s;
@@ -81,7 +84,7 @@ body {
     color: var(--black);
     margin: 0;
     padding: 0;
-    background-color: var(--white);
+    background-color: var(--green-pastel);
 }
 
 #hero {
@@ -92,6 +95,7 @@ body {
 #hero-box {
     grid-area: 1 / 1 / 3 / 4;
     z-index: -1;
+    /* position: fixed; */
 }
 #hero-img {
     width: 100%;
@@ -100,8 +104,7 @@ body {
 #hero-msg {
     grid-area: 1 / 2 / 2 / 3;
     color: var(--white);
-    /* font-size: 2em; */
-    text-align: center
+    text-align: center;
 }
 #hero-msg h1 {
     font-size: 3em;
@@ -109,14 +112,45 @@ body {
 #hero-msg h3 {
     font-size: 1.5em;
 }
+#hero-gradient {
+    grid-area: 1 / 1 / 3 / 4;
+}
 .home-main, .shapes-main, .components-main {
     max-width: 1400px;
     background-color: var(--green-pastel);
     margin: 0 auto;
     padding: 15px;
 }
+.home-intro, .components-intro, .components-generic, .shapes-generic, .home-grid > div {
+    background-color: var(--white);
+    /* border-radius: 3px; */
+    border: 5px solid var(--green-light);
+    padding: 15px;
+    margin:15px;
+
+}
+.home-intro h4, .components-intro h4, .components-generic h4, .shapes-generic h4, .home-grid > div h4 {
+    margin:0;
+    font-size: 1.75em;
+    
+}
+.home-intro p, .components-intro p, .components-generic p, .shapes-generic p, .home-grid > div p {
+    margin:0;
+    font-size: 1.2em;
+    
+}
 .home-intro h4, .components-intro h4 {
- margin:0;
+    font-size: 2em;
+}
+
+a {
+    color: var(--green-dark);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+a:hover {
+    color: var(--black);
 }
 
 
