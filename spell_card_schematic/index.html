@@ -12,6 +12,7 @@
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
 
     <title>Spell Card Schematic</title>
+
 </head>
 <header>
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -33,15 +34,18 @@
         <img id="hero-img" src="images/home-hero.jpg" alt="#">
     </div>
     <section id="hero-msg">
-        <h1 class="home-title">
-            Spell Cards
-        </h1>
-        <h3>
-            Spell cards from Dungeons and Dragons
-        </h3>
+        
+            <h1 class="home-title">
+                <span class="hero-highlight"></span>
+                Spell Cards
+            </h1>
+            <h3>
+                Spell cards from Dungeons and Dragons
+            </h3>
+ 
     </section>
-<div id="hero-gradient">
-</div>
+    <div id="hero-gradient">
+    </div>
 </div>
 
 </html>
@@ -168,5 +172,12 @@
     <!-- Here include siteplan, and social media links -->
 </footer>
 </body>
+<script>
+    const heroSize = document.getElementById("hero")
+    window.addEventListener('scroll', () => {
+        // heroSize.style.setProperty('--scroll', window.pageYOffset / (heroSize.offsetHeight - window.innerHeight));
+        document.getElementById("hero").style.setProperty('--scroll', (window.pageYOffset - document.getElementById("hero").offsetHeight) / document.getElementById("hero").offsetHeight);
+    }, false);
+</script>
 
 </html>
