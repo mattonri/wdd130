@@ -185,6 +185,7 @@ body {
 .shapes-generic h4,
 .home-grid>div h4 {
     margin: 0;
+
 }
 
 .home-intro p,
@@ -214,17 +215,18 @@ a:hover {
     grid-gap: 15px;
 }
 
-.home-grid>div{
-     padding:15px;
-     background-color: var(--white);
-     border: 5px solid var(--green-light);
-     box-sizing: border-box;
+.home-grid>div {
+    padding: 15px;
+    background-color: var(--white);
+    border: 5px solid var(--green-light);
+    box-sizing: border-box;
 }
 
-.grid-child-example{
+.grid-child-example {
     width: auto;
     text-align: center;
 }
+
 .grid-child-example h4 {
     padding-bottom: 10px;
 }
@@ -242,11 +244,12 @@ a:hover {
 
 .components-somatic-text {
     grid-column: 2 / 3;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-.components-somatic-text p, .components-somatic-text h4 {
+.components-somatic-text p,
+.components-somatic-text h4 {
     margin: 15px;
 }
 
@@ -261,35 +264,67 @@ a:hover {
     justify-content: center;
     margin-right: 15px;
 }
+
 .components-somatic-img img {
 
     margin: auto auto;
 }
+
 .components-somatic-img img:nth-child(1) {
     display: flex;
-    width:71%
+    width: 71%
 }
+
 .components-somatic-img img:nth-child(2) {
     display: flex;
-    width:100%
+    width: 100%
 }
+
 .components-somatic-img img:nth-child(3) {
     display: flex;
-    width:100%
+    width: 100%
 }
+
 .components-somatic-img img:nth-child(4) {
     display: flex;
-    width:71%
+    width: 71%
 }
+
 .components-generic {
     content: "";
     clear: both;
     display: table;
 }
-.components-generic img{
+
+.components-generic img {
     display: flex;
-    width:10%;
-    float:right;
+    width: 10%;
+    float: right;
+    margin-left: 15px;
+}
+
+.shapes-generic p {
+    margin-top: 5px;
+}
+
+#shapes-image-skull {
+    display: flex;
+    width: 20%;
+    float: right;
+    margin-left: 15px;
+}
+
+#shapes-image-book {
+    display: flex;
+    width: 20%;
+    float: left;
+    margin-left: 15px;
+}
+
+#shapes-image-desk {
+    display: flex;
+    width: 20%;
+    float: right;
     margin-left: 15px;
 }
 
@@ -324,18 +359,23 @@ footer a:hover {
     body {
         min-width: 400px;
     }
+
     #hero-img {
         min-width: 400px;
     }
+
     #hero-msg h3 {
         margin-bottom: 50px;
     }
+
     .home-grid {
         grid-template-columns: 1fr;
     }
-    .home-grid>div{
+
+    .home-grid>div {
         margin: 15px 0;
     }
+
     .grid-child-example {
         grid-row: 1 / span 1;
     }
@@ -343,23 +383,35 @@ footer a:hover {
     .components-somatic {
         grid-template-columns: 1fr 7fr;
     }
+
     .components-somatic-img {
         grid-template-columns: 1fr;
     }
+
     .components-somatic-img img:nth-child(1) {
-        width:50%
+        width: 50%
     }
+
     .components-somatic-img img:nth-child(2) {
-        width:100%
+        width: 100%
     }
+
     .components-somatic-img img:nth-child(3) {
-        width:75%
+        width: 75%
     }
+
     .components-somatic-img img:nth-child(4) {
-        width:75%
+        width: 75%
     }
-    .components-generic img{
-        width:20%
+
+    .components-generic img {
+        width: 20%
+    }
+
+    #shapes-image-desk,
+    #shapes-image-skull,
+    #shapes-image-book {
+        width: 30%;
     }
 
     footer {
@@ -367,6 +419,7 @@ footer a:hover {
         flex-direction: column;
     }
 }
+
 @media screen and (max-width: 650px) {
     .components-somatic {
         grid-template-columns: 1fr 3fr;
