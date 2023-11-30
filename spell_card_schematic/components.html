@@ -36,7 +36,10 @@
         <h1 class="home-title">
             Spell Components
         </h1>
+        <h3></h3>
     </section>
+    <div id="hero-gradient">
+    </div>
 </div>
 <main class="components-main">
     <section class="components-intro">
@@ -81,6 +84,8 @@
         </div>
     </section>
     <section class="components-generic">
+            <img src="images/snake-jar.png" alt="Snake in a jar">
+        
         <h4>
             Material Components
         </h4>
@@ -93,7 +98,6 @@
             with a gp value introduce an economy to spellcasting, requiring characters to manage resources and acquire
             specific items for powerful spells.
         </p>
-        <img src="images/snake-jar.png" alt="Snake in a jar">
     </section>
 </main>
 <footer>
@@ -102,7 +106,7 @@
             href="https://www.freepik.com/author/freepik">Freepik</a> and <a
             href="https://www.freepik.com/author/macrovector">Macrovector</a> on <a
             href="https://www.freepik.com/">Freepik</a></p>
-    <a href="site-plan.html">Siteplan</a>
+    <p><a href="site-plan.html">Siteplan</a></p>
 
     <div class="social">
         <a href="https://facebook.com" target="_blank">
@@ -117,6 +121,13 @@
     </div>
     <!-- Here include siteplan, and social media links -->
 </footer>
+<script>
+    const heroSize = document.getElementById("hero")
+    window.addEventListener('scroll', () => {
+        // heroSize.style.setProperty('--scroll', window.pageYOffset / (heroSize.offsetHeight - window.innerHeight));
+        document.getElementById("hero").style.setProperty('--scroll', (window.pageYOffset - document.getElementById("hero").offsetHeight) / document.getElementById("hero").offsetHeight);
+    }, false);
+</script>
 </body>
 
 </html>

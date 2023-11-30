@@ -36,7 +36,10 @@
         <h1 class="home-title">
             Range & Shape
         </h1>
+        <h3></h3>
     </section>
+    <div id="hero-gradient">
+    </div>
 </div>
 <main class="shapes-main">
     <section class="shapes-generic">
@@ -78,7 +81,7 @@
             href="https://www.freepik.com/author/freepik">Freepik</a> and <a
             href="https://www.freepik.com/author/macrovector">Macrovector</a> on <a
             href="https://www.freepik.com/">Freepik</a></p>
-    <a href="site-plan.html">Siteplan</a>
+    <p><a href="site-plan.html">Siteplan</a></p>
 
     <div class="social">
         <a href="https://facebook.com" target="_blank">
@@ -93,6 +96,13 @@
     </div>
     <!-- Here include siteplan, and social media links -->
 </footer>
+<script>
+    const heroSize = document.getElementById("hero")
+    window.addEventListener('scroll', () => {
+        // heroSize.style.setProperty('--scroll', window.pageYOffset / (heroSize.offsetHeight - window.innerHeight));
+        document.getElementById("hero").style.setProperty('--scroll', (window.pageYOffset - document.getElementById("hero").offsetHeight) / document.getElementById("hero").offsetHeight);
+    }, false);
+</script>
 </body>
 
 </html>

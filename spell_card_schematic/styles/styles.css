@@ -229,6 +229,70 @@ a:hover {
     padding-bottom: 10px;
 }
 
+.components-somatic {
+    max-width: var(--max-width);
+    background-color: var(--green-dark);
+    border: 5px solid var(--green-light);
+    padding: 15px;
+    margin: 15px auto;
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.components-somatic-text {
+    grid-column: 2 / 3;
+    margin:0;
+    padding:0;
+}
+
+.components-somatic-text p, .components-somatic-text h4 {
+    margin: 15px;
+}
+
+.components-somatic-img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
+    grid-template-columns: 11fr 17fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    margin-right: 15px;
+}
+.components-somatic-img img {
+
+    margin: auto auto;
+}
+.components-somatic-img img:nth-child(1) {
+    display: flex;
+    width:71%
+}
+.components-somatic-img img:nth-child(2) {
+    display: flex;
+    width:100%
+}
+.components-somatic-img img:nth-child(3) {
+    display: flex;
+    width:100%
+}
+.components-somatic-img img:nth-child(4) {
+    display: flex;
+    width:71%
+}
+.components-generic {
+    content: "";
+    clear: both;
+    display: table;
+}
+.components-generic img{
+    display: flex;
+    width:10%;
+    float:right;
+    margin-left: 15px;
+}
+
 footer {
     background-color: var(--green-dark);
     color: var(--white);
@@ -263,6 +327,9 @@ footer a:hover {
     #hero-img {
         min-width: 400px;
     }
+    #hero-msg h3 {
+        margin-bottom: 50px;
+    }
     .home-grid {
         grid-template-columns: 1fr;
     }
@@ -272,11 +339,36 @@ footer a:hover {
     .grid-child-example {
         grid-row: 1 / span 1;
     }
-    #hero-msg h3 {
-        margin-bottom: 50px;
+
+    .components-somatic {
+        grid-template-columns: 1fr 7fr;
     }
+    .components-somatic-img {
+        grid-template-columns: 1fr;
+    }
+    .components-somatic-img img:nth-child(1) {
+        width:50%
+    }
+    .components-somatic-img img:nth-child(2) {
+        width:100%
+    }
+    .components-somatic-img img:nth-child(3) {
+        width:75%
+    }
+    .components-somatic-img img:nth-child(4) {
+        width:75%
+    }
+    .components-generic img{
+        width:20%
+    }
+
     footer {
         padding: 25px;
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 650px) {
+    .components-somatic {
+        grid-template-columns: 1fr 3fr;
     }
 }
